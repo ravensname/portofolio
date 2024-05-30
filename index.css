@@ -213,41 +213,47 @@ body:not(.user-is-tabbing) a:focus {
     color: var(--purple);
 }
 
-.btn {
+.btn,
+.btn--purple {
     position: relative;
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: inherit;
-    border: 1px solid  var(--purple);
+    color: var(--purple); /* Change color to purple */
+    border: 1px solid var(--purple); /* Change border color to purple */
     font-weight: 400;
 }
 
-.btn:focus {
+.btn:focus,
+.btn--purple:focus {
     outline: none;
 }
 
-.btn::after {
+.btn::after,
+.btn--purple::after {
     content: '';
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--white);
+    background: var(--purple); /* Change background color to purple */
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
 .btn:hover::after,
-.btn:focus::after {
+.btn:focus::after,
+.btn--purple:hover::after,
+.btn--purple:focus::after {
     right: 0;
-    background: var(--purple);
+    background: var(--white); /* Change background color to white on hover/focus */
+    color: var(--purple); /* Change text color to purple on hover/focus */
 }
 
 .btn--purple {
-    background: var(--purple);
+    background: var(--purple); /* Change background color to purple */
     transition: all 0.2s;
 }
 
@@ -257,8 +263,10 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn--purple:hover,
 .btn--purple:focus {
-    background: transparent;
+    background: transparent; /* Change background color to transparent on hover/focus */
+    color: var(--purple); /* Change text color to purple on hover/focus */
 }
+
 
 .link__text {
     position: relative;
