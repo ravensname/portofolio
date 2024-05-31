@@ -219,7 +219,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: var(--purple); /* Change color to purple */
+    color: var(--white); /* Change color to purple */
     border: 1px solid var(--purple); /* Change border color to purple */
     font-weight: 400;
 }
