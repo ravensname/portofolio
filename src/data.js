@@ -19,7 +19,7 @@ export const experience = [
   {
     period: 'Oct 2026 - Present',
     current: true,
-    logo: 'logos/sinarmas.png',
+    logo: `${import.meta.env.BASE_URL}logos/sinarmas.png`,
     title: 'Project Management Officer',
     company: 'Sinar Mas Land, BSD City',
     points: [
@@ -31,7 +31,7 @@ export const experience = [
   {
     period: 'Sep 2025 - Present',
     current: true,
-    logo: 'logos/sinarmas.png',
+    logo: `${import.meta.env.BASE_URL}logos/sinarmas.png`,
     title: 'Master Data Management - Data Governance',
     company: 'Sinar Mas Land, BSD City',
     points: [
@@ -44,7 +44,7 @@ export const experience = [
   },
   {
     period: 'Jan 2025 - July 2025',
-    logo: 'logos/sinarmas.png',
+    logo: `${import.meta.env.BASE_URL}logos/sinarmas.png`,
     title: 'Moodle Developer Intern',
     company: 'PT. SMART Tbk, Central Jakarta',
     points: [
@@ -56,7 +56,7 @@ export const experience = [
   },
   {
     period: 'Aug 2024 - Dec 2024',
-    logo: 'logos/akebono.png',
+    logo: `${import.meta.env.BASE_URL}logos/akebono.png`,
     title: 'IT Intern',
     company: 'PT. Akebono Brake Astra Indonesia, North Jakarta',
     points: [
