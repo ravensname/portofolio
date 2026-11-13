@@ -52,7 +52,7 @@ export default function Portfolio() {
                 <div className="job-head">
                   <div className="logo">
                     {job.logo ? (
-                      <img src={`${import.meta.env.BASE_URL}${job.logo}`} alt={`Logo ${job.company}`} />
+                      <img src={job.logo} alt={`Logo ${job.company}`} />
                     ) : (
                       <span aria-hidden="true">{job.company[0]}</span>
                     )}
