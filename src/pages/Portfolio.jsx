@@ -33,8 +33,21 @@ export default function Portfolio() {
           <h1>{profile.name}</h1>
           <p className="role">{profile.role}</p>
           <p className="intro">{profile.intro}</p>
-          <a className="button" href="#contact">Get in touch</a>
-          <a className="button ghost" href={cvUrl} download>Download CV</a>
+
+          <button
+            className="button"
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }}
+          >
+            Get in touch
+          </button>
+
+          <a className="button ghost" href={cvUrl} download>
+            Download CV
+          </a>
         </section>
 
         <section id="about">
