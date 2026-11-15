@@ -15,6 +15,10 @@ export const about = [
   "Informatics graduate with experience in Data Governance, Master Data Management, and Project Management. Skilled in data quality management, requirement validation, stakeholder coordination, and project monitoring to support efficient processes and data-driven decision-making.",
 ]
 
+export const site = {
+  brand: "Roulina's Page",
+}
+
 export const experience = [
   {
     period: 'Oct 2026 - Present',

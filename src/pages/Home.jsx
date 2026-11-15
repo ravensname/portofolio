@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { profile, cvUrl } from '../data'
+import { profile, site, cvUrl } from '../data'
 import useViewNavigate from '../useViewNavigate'
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="home">
       <header className="top">
-        <span className="brand">{profile.name}</span>
+        <span className="brand">{site.brand}</span>
         <p className="status"><span className="dot" />Open to new opportunities</p>
       </header>
 
